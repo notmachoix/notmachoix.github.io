@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Macho - Discord Developer</title>
+    <link rel="stylesheet" href="Style/style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Macho Developments 2025</h1>
+        <p>Discord Bot Developer with Over 2 Years of Code Knockledge</p>
+        <a href="Pages/support.html" class="contact-btn">Contact Me</a>
+    </header>
+
+    <section id="about-me">
+        <h2>About Me</h2>
+        <p>
+            Hey! I'm Macho, a Discord Developer. I can make Discord bots to any Good Standard. I have a little over 2
+            years of
+            JavaScript development experience, and I would say I can make any bot tailored to any Requirments!
+        </p>
+        <P>
+            <li>Sometime i work on Projects without any Plan and Just do it when i want other Times i See thoughts and i
+                work from that</li>
+        </P>
+    </section>
+
+
+
+
+    <section id="work">
+        <h2>My Previous Work</h2>
+        <li>I Used to Volenteer at a old FiveM Server back in 2024 <strong>UKRP</strong> This was for Around 4 Months
+            from this i Had to step back due to life Commitments however i still
+            didnt stop Coding and Still work on my Projects like i do now</li>
+        </P>
+    </section>
+
+
+
+    <section id="where-iam">
+        <h2>Where am I?</h2>
+        <p>
+            I am a full English person, always been in the UK. I can be contacted via the contact options.
+            Unfortunately, I do not have an official Discord at this time, but it is in the works.
+        </p>
+    </section>
+
+    <nav>
+        <a href="#discord-dev">Discord Development</a>
+        <a href="#projects">See Projects</a>
+    </nav>
+
+    <section id="discord-dev">
+        <h2>Discord Development</h2>
+        <p>I specialize in creating custom Discord bots. From moderation tools to Support Tickets , Im Currently
+            Learning the use of API integrations in FiveM usages.</p>
+
+        <div class="discord-cta important">
+            <p><strong>Discord Server Below</strong></p>
+            <p>any Issues Please Join the Discord Below </p>
+            <a href="https://discord.gg/H65hMWDZwh" target="_blank">
+                <img src="/Images/logo/discord-logo.jpg" alt="Discord Logo" />
+            </a>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <p>Here are some of the things I’ve worked on recently:</p>
+
+        <div class="project-gallery">
+            <!-- Support Bot Card -->
+            <div class="project-card" onclick="openModal('supportBot')">
+                <img src="/Images/Bots/Support_Bot/image1.png" alt="Support Bot" />
+                <h3>Support Bot System</h3>
+                <p>Advanced Support Ticket bot with logging, and auto actions.</p>
+            </div>
+
+            <!-- ✅ Future Box Card (Text-only in modal) -->
+            <div class="project-card" onclick="openModal('futureBox')">
+                <h3>Future Box</h3>
+                <p>What is Coming Next?</p>
+                <P>View Now:</P>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <strong><p>&copy; Macho Developments<strong>
+            <p><strong>All Rights Reserved 2025</strong></p>
+        <p>UK Time Currently Live: <span id="uk-clock">Loading...</span></p>
+    </footer>
+
+    <!-- Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title">Project Title</h2>
+            <p id="modal-description">Project detailed description will go here.</p>
+
+            <div class="modal-image-container">
+                <button class="img-nav" id="prev-btn" onclick="changeImage(-1)">&#10094;</button>
+                <img id="modal-image" src="" alt="Project Image" />
+                <button class="img-nav" id="next-btn" onclick="changeImage(1)">&#10095;</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="Scripts/main.js"></script>
+    <script src="Scripts/clock.js"></script>
+
+</body>
+
+</html>
