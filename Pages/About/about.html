@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Who Am I? | Not Macho</title>
+  <link rel="stylesheet" href="../../Style/style.css" />
+  <script defer src="../../Scripts/discord-avatar.js"></script>
+  <script defer src="../../Scripts/emojiRain.js"></script>
+
+  <style>
+    /* Style for the title */
+    .profile h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      transition: color 0.8s ease;
+    }
+  </style>
+</head>
+<body class="about-page">
+  <section class="whoami">
+    <div class="profile">
+      <img id="discord-avatar" src="" alt="Discord Avatar" />
+      <h2 id="colorTitle">Not Macho</h2>
+      <p class="tagline">Discord Developer | Bot Creator</p>
+    </div>
+
+    <div class="about-text">
+      <h3>About Me</h3>
+      <p>
+        Hey! I’m Not Macho — a Discord Developer who loves coding,
+        automation, and creating tools that make online communities better.
+        <br><br>
+        I specialize in <strong>Discord bot development</strong> using
+        <strong>Node.js</strong> and <strong>Discord.js</strong>, with a focus on
+        clean, efficient, and creative solutions.
+      </p>
+    </div>
+
+    <div class="back-home">
+      <a href="../../index.html" class="back-btn">⬅ Back to Home</a>
+    </div>
+  </section>
+
+  <script>
+    // Random color changer for the "Not Macho" title
+    const title = document.getElementById("colorTitle");
+
+    function randomColor() {
+      const r = Math.floor(Math.random() * 256);
+      const g = Math.floor(Math.random() * 256);
+      const b = Math.floor(Math.random() * 256);
+      return `rgb(${r}, ${g}, ${b})`;
+    }
+
+    setInterval(() => {
+      title.style.color = randomColor();
+    }, 1000); // changes color every 1 second
+  </script>
+</body>
+</html>
