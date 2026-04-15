@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | notmachoix</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <h1>notmachoix</h1>
+        <a href="../../index.html">Home</a>
+    </nav>
+
+    <!-- DASHBOARD / PROJECTS -->
+    <section class="dashboard">
+        <h2>My Discord Bots</h2>
+
+        <div class="projects">
+
+            <div class="card">
+                <h3>Ticket Bot</h3>
+                <p>Advanced ticket system with support panels, transcripts, and staff management.</p>
+                <a href="#" onclick="openModal()">Press to View</a>
+            </div>
+
+            <div class="card">
+                <h3>Moderation Bot</h3>
+                <p>Coming soon — keep an eye on this!</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- MODAL -->
+    <div id="demoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+
+            <h2>🎟 Ticket Bot Demo</h2>
+            <p>Want to try the bot before adding it?</p>
+
+            <p class="highlight">
+                Come over to my Public Discord Server for <strong>FREE TESTING</strong>.
+            </p>
+
+            <div class="modal-buttons">
+                <!-- Discord Button -->
+                <a href="https://discord.com/users/1283001548892536865" target="_blank" class="btn discord-btn">
+                    <img src="https://cdn.discordapp.com/avatars/1283001548892536865/4fdb4a74cd14b2ff6b2934f7ac901b03.png?size=1024" class="discord-pfp">
+                    <span>DM Me on Discord</span>
+                </a>
+
+                <!-- Gallery Toggle -->
+                <button onclick="toggleGallery()" class="btn primary">
+                    📸 View Bot Images
+                </button>
+
+                <!-- Copy Discord Tag -->
+                <button onclick="copyDiscord()" class="btn secondary">
+                    📋 Copy Discord Tag
+                </button>
+            </div>
+
+            <!-- Image Gallery -->
+            <div id="imageGallery" class="image-gallery" style="display: none;">
+                <img src="../images/bot1.png" alt="Bot Image 1">
+                <img src="../images/bot2.png" alt="Bot Image 2">
+                <img src="../images/bot3.png" alt="Bot Image 3">
+                <img src="../images/bot4.png" alt="Bot Image 4">
+                <img src="../images/bot5.png" alt="Bot Image 5">
+            </div>
+
+            <span id="copyMsg" class="copy-msg">Copied!</span>
+        </div>
+    </div>
+
+    <!-- Full-screen Image Modal -->
+    <div id="fullImageModal">
+        <img src="" alt="Full View">
+    </div>
+
+    <!-- SCRIPTS -->
+    <script>
+        // MODAL OPEN/CLOSE
+        function openModal() {
+            const modal = document.getElementById("demoModal");
+            modal.style.display = "flex";
+            setTimeout(() => modal.classList.add("show"), 10);
+        }
+
+        function closeModal() {
+            const modal = document.getElementById("demoModal");
+            modal.classList.remove("show");
+            setTimeout(() => modal.style.display = "none", 300);
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById("demoModal");
+            if (event.target === modal) closeModal();
+        }
+
+        // COPY DISCORD TAG
+        function copyDiscord() {
+            navigator.clipboard.writeText("notmachoix");
+            const msg = document.getElementById("copyMsg");
+            msg.classList.add("show");
+            setTimeout(() => msg.classList.remove("show"), 2000);
+        }
+
+        // TOGGLE IMAGE GALLERY
+        function toggleGallery() {
+            const gallery = document.getElementById("imageGallery");
+            gallery.style.display = gallery.style.display === "none" ? "grid" : "none";
+        }
+
+        // FULLSCREEN IMAGE MODAL
+        const galleryImages = document.querySelectorAll('#imageGallery img');
+        const fullModal = document.getElementById('fullImageModal');
+        const fullImg = fullModal.querySelector('img');
+
+        galleryImages.forEach(img => {
+            img.style.cursor = 'pointer';
+            img.addEventListener('click', () => {
+                fullImg.src = img.src;
+                fullModal.style.display = 'flex';
+            });
+        });
+
+        fullModal.addEventListener('click', () => {
+            fullModal.style.display = 'none';
+        });
+    </script>
+
+</body>
+
+</html>
