@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>notmachoix.dev | Developer</title>
+
+    <link rel="icon" type="image/x-icon" href="Dev/assets/nm-dev-logo.ico">
+    <meta name="description"
+        content="Discord.js developer focused on moderation, ticket systems, verification, and server safety.">
+
+    <link rel="stylesheet" href="Dev/Style/dev.css">
+
+    <meta property="og:title" content="notmachoix.dev | Discord.js Developer">
+    <meta property="og:description"
+        content="Discord.js developer focused on moderation, ticket systems, verification, and server safety.">
+    <meta property="og:image" content="Dev/assets/pic.png">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="notmachoix.dev | Discord.js Developer">
+    <meta name="twitter:description"
+        content="Discord.js developer focused on moderation, ticket systems, verification, and server safety.">
+    <meta name="twitter:image" content="Dev/assets/pic.png">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="site-header">
+        <div class="container nav-container">
+
+            <a href="#" class="logo">
+                notmachoix<span>.dev</span>.<span class="red">co.uk</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <main>
+
+        <section class="hero">
+            <div class="container hero-container">
+
+                <div class="hero-content">
+                    <p class="eyebrow">Discord.js Developer</p>
+
+                    <h1>
+                        Building Discord bots that
+                        <span>keep communities running.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        I develop reliable Discord bots with a focus on ticket systems,
+                        moderation, verification, and server safety.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            View my work
+                        </a>
+
+                        <button class="btn btn-secondary" id="openDiscord">
+                            Discord ↗
+                        </button>
+                    </div>
+
+                    <div class="status-pill" id="statusPill" data-status="offline">
+                        <span class="status-dot"></span>
+                        <span class="status-text">Offline</span>
+                    </div>
+                </div>
+
+                <div class="hero-card">
+                    <div class="code-window">
+
+                        <div class="code-window-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span class="code-window-title">terminal | discord.js | notmachoix</span>
+                        </div>
+
+                        <pre
+                            class="code-window-pre"><code id="typedCode"></code><span class="code-cursor">&#9608;</span></pre>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- About Section -->
+        <section class="section" id="about">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">About me</p>
+                    <h2>A developer who understands communities.</h2>
+                </div>
+
+                <div class="about-grid">
+
+                    <div class="about-text">
+                        <p>
+                            I have been working with Discord.js for around three years,
+                            creating bots that help servers stay organised, secure,
+                            and easy to manage.
+                        </p>
+
+                        <p>
+                            Most of my work involves building practical systems rather
+                            than unnecessary features. I like clean commands, useful
+                            automation, and code that is easy to maintain.
+                        </p>
+
+                        <p>
+                            My main interests are moderation tools, ticket systems,
+                            verification flows, logging, and protecting servers from
+                            unwanted activity.
+                        </p>
+                    </div>
+
+                    <div class="about-details">
+
+                        <div class="detail-item">
+                            <span class="detail-label">Experience</span>
+                            <span class="detail-value">3 years</span>
+                        </div>
+
+                        <div class="detail-item">
+                            <span class="detail-label">Main language</span>
+                            <span class="detail-value">JavaScript</span>
+                        </div>
+
+                        <div class="detail-item">
+                            <span class="detail-label">Framework</span>
+                            <span class="detail-value">Discord.js</span>
+                        </div>
+
+                        <div class="detail-item">
+                            <span class="detail-label">Focus</span>
+                            <span class="detail-value">Server automation</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Skills Section -->
+        <section class="section section-muted" id="skills">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">Skills</p>
+                    <h2>What I usually work with.</h2>
+                </div>
+
+                <div class="skills-grid">
+
+                    <article class="skill-card">
+                        <div class="skill-icon">JS</div>
+                        <h3>JavaScript</h3>
+                        <p>
+                            Writing bot logic, commands, event handlers, and
+                            backend systems.
+                        </p>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">D.js</div>
+                        <h3>Discord.js</h3>
+                        <p>
+                            Creating slash commands, buttons, modals, embeds,
+                            and event-based features.
+                        </p>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">DB</div>
+                        <h3>Databases</h3>
+                        <p>
+                            Storing tickets, settings, warnings, verification
+                            data, and server configurations.
+                        </p>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">SEC</div>
+                        <h3>Server Safety</h3>
+                        <p>
+                            Building moderation tools, logging systems,
+                            permission checks, and anti-abuse features.
+                        </p>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">SEC</div>
+                        <h3>FiveM Development</h3>
+                        <p>
+                            Building high quality FiveM Scripts in .lua and more.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Projects Section -->
+        <section class="section" id="projects">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">Selected projects</p>
+                    <h2>Some things I have built.</h2>
+                </div>
+
+                <div class="projects-grid">
+
+                    <article class="project-card">
+
+                        <div class="project-card-top">
+                            <span class="project-number">01</span>
+                            <span class="project-status">Completed</span>
+                        </div>
+
+                        <h3>Ticket Management Bot</h3>
+
+                        <p>
+                            A complete ticket system using buttons and modals.
+                            Includes ticket creation, staff controls, transcripts,
+                            closing, and category management.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Discord.js</span>
+                            <span>Buttons</span>
+                            <span>Modals</span>
+                        </div>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <div class="project-card-top">
+                            <span class="project-number">02</span>
+                            <span class="project-status">Completed</span>
+                        </div>
+
+                        <h3>Moderation System</h3>
+
+                        <p>
+                            A moderation bot with warnings, timeouts, bans,
+                            kicks, message logs, permission checks, and
+                            configurable moderation settings.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Moderation</span>
+                            <span>Logging</span>
+                            <span>Permissions</span>
+                        </div>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <div class="project-card-top">
+                            <span class="project-number">03</span>
+                            <span class="project-status">Completed</span>
+                        </div>
+
+                        <h3>Verification Bot</h3>
+
+                        <p>
+                            A verification flow designed to help servers reduce
+                            spam and unwanted accounts before users gain access
+                            to the main community.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Verification</span>
+                            <span>Security</span>
+                            <span>Automation</span>
+                        </div>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <div class="project-card-top">
+                            <span class="project-number">04</span>
+                            <span class="project-status">In progress</span>
+                        </div>
+
+                        <h3>Server Safety Tools</h3>
+
+                        <p>
+                            A collection of safety features including anti-spam,
+                            anti-raid checks, suspicious activity logging,
+                            and automated moderation responses.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Anti-spam</span>
+                            <span>Anti-raid</span>
+                            <span>Security</span>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section class="section section-muted" id="contact">
+            <div class="container contact-container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">Contact</p>
+                    <h2>Have a Discord project in mind?</h2>
+                </div>
+
+                <p class="contact-description">
+                    If you need a custom Discord bot, moderation system,
+                    ticket setup, or verification system, feel free to contact me.
+                </p>
+
+                <div class="contact-actions">
+                    <button class="btn btn-primary" id="openDiscord">
+                        View Discord Info
+                    </button>
+
+                    <a href="hellonotmachoix.dev@gmail.com" class="btn btn-secondary">
+                        Send an email
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        ↑
+    </button>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+
+            <p>
+                © 2026 notmachoix.dev. Care & Love 💙
+            </p>
+
+            <div class="footer-links">
+                <a href="https://github.com/notmachoix" target="_blank" rel="noopener noreferrer">
+                    GitHub ↗
+                </a>
+
+                <a href="https://discord.com/users/1283001548892536865" target="_blank" rel="noopener noreferrer">
+                    Discord ↗
+                </a>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!-- Discord Information Popup -->
+    <div class="discord-modal" id="discordModal" aria-hidden="true">
+
+        <div class="discord-overlay" id="discordOverlay"></div>
+
+        <div class="discord-popup" role="dialog" aria-modal="true" aria-labelledby="discordPopupTitle">
+
+            <button class="discord-close" id="closeDiscord" aria-label="Close Discord information">
+                ×
+            </button>
+
+            <div class="discord-banner"></div>
+
+            <div class="discord-profile">
+
+                <div class="discord-avatar-wrapper">
+                    <img src="Dev/assets/pic.png" alt="Discord avatar" class="discord-avatar">
+
+                    <span class="discord-status-dot" id="modalStatusDot" title="Offline"></span>
+                </div>
+
+                <div class="discord-profile-text">
+                    <h2 id="discordPopupTitle">notmachoix.dev</h2>
+                    <p>@notmachoix</p>
+                </div>
+
+            </div>
+
+            <div class="discord-info">
+
+                <div class="discord-info-row">
+                    <span class="discord-info-label">notmachoix</span>
+                    <span class="discord-info-value">
+                        @notmachoix
+                    </span>
+                </div>
+
+                <div class="discord-info-row">
+                    <span class="discord-info-label">Discord ID</span>
+
+                    <span class="discord-info-value discord-id-value">
+                        1283001548892536865
+                    </span>
+                </div>
+
+                <div class="discord-info-row">
+                    <span class="discord-info-label">Status</span>
+
+                    <span class="discord-info-value" id="modalStatusValue">
+                        <span id="modalStatusIndicator"></span>
+                        <span id="modalStatusLabel">Offline</span>
+                    </span>
+                </div>
+
+                <div class="discord-info-row">
+                    <span class="discord-info-label">Main focus</span>
+                    <span class="discord-info-value">
+                        Discord.js Development
+                    </span>
+                </div>
+
+            </div>
+
+            <div class="discord-popup-actions">
+
+                <button class="btn btn-primary" id="copyDiscordId">
+                    Copy ID
+                </button>
+
+                <a href="https://discord.com/users/1283001548892536865" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-secondary">
+                    Open Discord
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script>
+        const discordModal = document.getElementById("discordModal");
+        const discordOverlay = document.getElementById("discordOverlay");
+        const closeDiscord = document.getElementById("closeDiscord");
+        const copyDiscordId = document.getElementById("copyDiscordId");
+
+        const openDiscordButtons = document.querySelectorAll("#openDiscord");
+
+        const discordId = "1283001548892536865";
+
+
+        function openDiscordModal() {
+            discordModal.classList.add("active");
+            discordModal.setAttribute("aria-hidden", "false");
+            document.body.classList.add("modal-open");
+        }
+
+
+        function closeDiscordModal() {
+            discordModal.classList.remove("active");
+            discordModal.setAttribute("aria-hidden", "true");
+            document.body.classList.remove("modal-open");
+        }
+
+
+        openDiscordButtons.forEach((button) => {
+            button.addEventListener("click", openDiscordModal);
+        });
+
+
+        closeDiscord.addEventListener("click", closeDiscordModal);
+
+
+        discordOverlay.addEventListener("click", closeDiscordModal);
+
+
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "Escape") {
+                closeDiscordModal();
+            }
+        });
+
+
+        copyDiscordId.addEventListener("click", async () => {
+            try {
+                await navigator.clipboard.writeText(discordId);
+
+                copyDiscordId.textContent = "Copied ✓";
+
+                setTimeout(() => {
+                    copyDiscordId.textContent = "Copy ID";
+                }, 1500);
+
+            } catch (error) {
+                copyDiscordId.textContent = "Copy failed";
+
+                setTimeout(() => {
+                    copyDiscordId.textContent = "Copy ID";
+                }, 1500);
+            }
+        });
+
+
+        /* =========================================
+           DISCORD STATUS (currently static: offline)
+           ---------------------------------------------
+           To go live later, replace CURRENT_STATUS with
+           a value fetched from your own presence source
+           (e.g. a small backend polling the Discord API,
+           or a Lanyard (https://github.com/Phineas/lanyard)
+           endpoint). Just call setDiscordStatus("online" |
+           "idle" | "dnd" | "offline") with the live value.
+        ========================================= */
+
+        const STATUS_CONFIG = {
+            online: { label: "Online", color: "#23a55a" },
+            idle: { label: "Idle", color: "#f0b232" },
+            dnd: { label: "Do Not Disturb", color: "#f23f43" },
+            offline: { label: "Offline", color: "#80848e" },
+        };
+
+        const statusPill = document.getElementById("statusPill");
+        const modalStatusDot = document.getElementById("modalStatusDot");
+        const modalStatusIndicator = document.getElementById("modalStatusIndicator");
+        const modalStatusLabel = document.getElementById("modalStatusLabel");
+
+        function setDiscordStatus(status) {
+            const config = STATUS_CONFIG[status] || STATUS_CONFIG.offline;
+
+            if (statusPill) {
+                statusPill.dataset.status = status;
+                statusPill.style.setProperty("--status-color", config.color);
+                const textEl = statusPill.querySelector(".status-text");
+                if (textEl) textEl.textContent = config.label;
+            }
+
+            if (modalStatusDot) {
+                modalStatusDot.style.background = config.color;
+                modalStatusDot.title = config.label;
+            }
+
+            if (modalStatusIndicator) {
+                modalStatusIndicator.style.background = config.color;
+            }
+
+            if (modalStatusLabel) {
+                modalStatusLabel.textContent = config.label;
+                modalStatusLabel.style.color = config.color;
+            }
+        }
+
+        const CURRENT_STATUS = "offline"; // <- swap this for live data later
+        setDiscordStatus(CURRENT_STATUS);
+
+
+        /* =========================================
+           LIVE-TYPING TERMINAL
+        ========================================= */
+
+        const terminalSnippets = [
+            [
+                { t: "const ", c: "code-purple" },
+                { t: "bot", c: "code-blue" },
+                { t: " = " },
+                { t: "new ", c: "code-purple" },
+                { t: "Discord.Client();\n\n" },
+                { t: "bot", c: "code-blue" },
+                { t: ".on(" },
+                { t: "'ready'", c: "code-green" },
+                { t: ", () => {\n    console.log(" },
+                { t: "'Bot is online'", c: "code-green" },
+                { t: ");\n});\n\n" },
+                { t: "bot", c: "code-blue" },
+                { t: ".login(process.env.TOKEN);" },
+            ],
+            [
+                { t: "// Ticket system — create channel\n", c: "code-green" },
+                { t: "const ", c: "code-purple" },
+                { t: "ticket", c: "code-blue" },
+                { t: " = " },
+                { t: "await ", c: "code-purple" },
+                { t: "guild.channels.create({\n    name: " },
+                { t: "`ticket-${user.username}`", c: "code-green" },
+                { t: ",\n    type: ChannelType.GuildText,\n});\n\n" },
+                { t: "await ", c: "code-purple" },
+                { t: "ticket.send(" },
+                { t: "'Support will be with you shortly.'", c: "code-green" },
+                { t: ");" },
+            ],
+            [
+                { t: "// Anti-raid check\n", c: "code-green" },
+                { t: "if ", c: "code-purple" },
+                { t: "(joinsInLastMinute > " },
+                { t: "10", c: "code-blue" },
+                { t: ") {\n    " },
+                { t: "await ", c: "code-purple" },
+                { t: "guild.setVerificationLevel(" },
+                { t: "'VERY_HIGH'", c: "code-green" },
+                { t: ");\n    logSecurityEvent(" },
+                { t: "'raid_detected'", c: "code-green" },
+                { t: ");\n}" },
+            ],
+        ];
+
+        const typedCodeEl = document.getElementById("typedCode");
+
+        function typeSnippet(snippetIndex) {
+            if (!typedCodeEl) return;
+
+            const snippet = terminalSnippets[snippetIndex % terminalSnippets.length];
+            typedCodeEl.innerHTML = "";
+
+            let partIndex = 0;
+            let charIndex = 0;
+            let currentSpan = null;
+
+            function typeNextChar() {
+                if (partIndex >= snippet.length) {
+                    setTimeout(() => {
+                        typeSnippet(snippetIndex + 1);
+                    }, 2200);
+                    return;
+                }
+
+                const part = snippet[partIndex];
+
+                if (charIndex === 0) {
+                    currentSpan = document.createElement("span");
+                    if (part.c) currentSpan.className = part.c;
+                    typedCodeEl.appendChild(currentSpan);
+                }
+
+                currentSpan.textContent += part.t[charIndex];
+                charIndex++;
+
+                if (charIndex >= part.t.length) {
+                    partIndex++;
+                    charIndex = 0;
+                }
+
+                const delay = part.t[charIndex - 1] === "\n" ? 60 : (12 + Math.random() * 28);
+                setTimeout(typeNextChar, delay);
+            }
+
+            typeNextChar();
+        }
+
+        typeSnippet(0);
+
+
+        /* =========================================
+           SCROLL FADE-IN ANIMATIONS
+        ========================================= */
+
+        const animatedSelectors = [
+            ".section-heading",
+            ".about-grid",
+            ".skill-card",
+            ".project-card",
+            ".contact-description",
+            ".contact-actions",
+        ];
+
+        const animatedEls = document.querySelectorAll(animatedSelectors.join(", "));
+
+        animatedEls.forEach((el, i) => {
+            el.classList.add("fade-in");
+            el.style.transitionDelay = `${Math.min(i % 4, 3) * 80}ms`;
+        });
+
+        if ("IntersectionObserver" in window) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("fade-in-visible");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15, rootMargin: "0px 0px -40px 0px" });
+
+            animatedEls.forEach((el) => observer.observe(el));
+        } else {
+            animatedEls.forEach((el) => el.classList.add("fade-in-visible"));
+        }
+
+
+        /* =========================================
+           BACK TO TOP
+        ========================================= */
+
+        const backToTop = document.getElementById("backToTop");
+
+        function toggleBackToTop() {
+            if (window.scrollY > 500) {
+                backToTop.classList.add("visible");
+            } else {
+                backToTop.classList.remove("visible");
+            }
+        }
+
+        window.addEventListener("scroll", toggleBackToTop, { passive: true });
+        toggleBackToTop();
+
+        backToTop.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
+
+</body>
+
+</html>
